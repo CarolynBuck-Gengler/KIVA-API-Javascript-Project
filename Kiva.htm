@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Play with KIVA API based on ch 11 chapter tutorial
+      
+      Author: cjbg
+      Date:   12/02/18
+
+      Filename: Kiva.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KIVA -- play with API</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 639px)" href="styleshh.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 640px)" href="styles.css" />
+   <!--[if lt IE 9]>
+      <link rel="stylesheet" href="styles.css" />
+   <![endif]-->
+   <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+   <script src="modernizr.custom.65897.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>KIVA &ndash; Lending action data from the API
+      </h1>
+   </header>
+
+   <article>
+
+	<section class="borrowers">
+		<div class="container">
+			<p class="error"></p>
+
+			<table id="firsttable">
+				<caption>The five most recently funded borrowers</br>
+				<em>Click on ID links to open Borrower Page in new tab</em></caption>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Country</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<hr />
+		<div class="container">
+			<table id="secondtable">
+				<caption id="table2caption">More interesting facts</br>
+				<em>(about the 100 most recent lending actions)</em></caption>
+				<tbody>
+					<tr>
+						<td>Time since newest on list</td>
+						<td id="agenewest"></td>
+					</tr>
+					<tr>
+						<td>Time since oldest on list</td>
+						<td id="ageoldest"></td>
+					</tr>
+					<tr>
+						<td>Avg time between loans</td>
+						<td id="avgtimebetw"></td>
+					</tr>
+					<tr>
+						<td>Avg Percent Funded</td>
+						<td id="percentfunded"></td>
+					</tr>
+					<tr>
+						<td>Number with First loan</td>
+						<td id="firstloan"></td>
+					</tr>
+					<tr>
+						<td>Number Fully funded</td>
+						<td id="fullyfunded"></td>
+					</tr>
+					<tr>
+						<td>Country/Countries receiving most loans</td>
+						<td id="recmostloans"></td>
+					</tr>
+				</tbody>
+					
+			</table>
+		</div>
+	</section>
+</article>
+   <footer><p class="credit">Built with help from the <a href="http://build.kiva.org/">KIVA API</a>.</p></footer>
+	<script src="script.js"></script>
+</body>
+</html>
